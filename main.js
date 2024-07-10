@@ -1,4 +1,9 @@
-import inquirer from 'inquirer';
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const inquirer_1 = __importDefault(require("inquirer"));
 const currency = {
     USD: 1, // Base currency
     EUR: 0.91,
@@ -6,7 +11,7 @@ const currency = {
     INR: 74.57,
     PKR: 280
 };
-let user_answer = await inquirer.prompt([
+let user_answer = await inquirer_1.default.prompt([
     {
         name: "from",
         messsage: "Enter From Currency",
